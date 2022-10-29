@@ -13,7 +13,7 @@ namespace QLTV_DoAn.Models
         public string TenNguoiDung { get; set; }
 
         [Display(Name = "Loại Người Dùng"), Required]
-        public LoaiNguoiDung loaiNguoiDung { get; set; }
+        public int LoaiNguoiDung { get; set; }
 
         [Display(Name = "Tên Đăng Nhập"), Required]
         public string TenDangNhap { get; set; }

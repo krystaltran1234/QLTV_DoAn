@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.TenNguoiDung)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.loaiNguoiDung.TenLoaiND)
+                @Html.DisplayNameFor(model => model.LoaiNguoiDung)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.TenDangNhap)
@@ -24,7 +24,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.MatKhau)
             </th>
-
             <th></th>
         </tr>
     </thead>
@@ -35,7 +34,7 @@
                 @Html.DisplayFor(modelItem => item.TenNguoiDung)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.loaiNguoiDung.TenLoaiND)
+                @Html.DisplayFor(modelItem => item.LoaiNguoiDung)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.TenDangNhap)
@@ -43,7 +42,6 @@
             <td>
                 @Html.DisplayFor(modelItem => item.MatKhau)
             </td>
-
             <td>
                 <a asp-action="Edit" asp-route-id="@item.MaNguoiDung">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.MaNguoiDung">Details</a> |

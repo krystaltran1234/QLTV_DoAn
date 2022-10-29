@@ -54,7 +54,7 @@ namespace QLTV_DoAn.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MaNguoiDung,TenNguoiDung,TenDangNhap,MatKhau,DaXoa")] NguoiDung nguoiDung)
+        public async Task<IActionResult> Create([Bind("MaNguoiDung,TenNguoiDung,LoaiNguoiDung,TenDangNhap,MatKhau,DaXoa")] NguoiDung nguoiDung)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace QLTV_DoAn.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MaNguoiDung,TenNguoiDung,TenDangNhap,MatKhau,DaXoa")] NguoiDung nguoiDung)
+        public async Task<IActionResult> Edit(int id, [Bind("MaNguoiDung,TenNguoiDung,LoaiNguoiDung,TenDangNhap,MatKhau,DaXoa")] NguoiDung nguoiDung)
         {
             if (id != nguoiDung.MaNguoiDung)
             {
